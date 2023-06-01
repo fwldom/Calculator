@@ -10,15 +10,28 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication3
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
         int number1 = 0;
         int number2 = 0;
         string PDS = "";
         bool ISFN = true;
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
+            this.KeyPreview = true;
+            foreach (Control Cont in this.Controls)
+            {
+                if (Cont is Button)
+                {
+                    Button btn = (Button)Cont;
+                    btn.TabStop = false;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                }
+
+
+            }
         }
 
         private void ClickNumber(object sender, EventArgs e)
@@ -93,8 +106,55 @@ namespace WindowsFormsApplication3
                     break;
 
             }
-      //      MessageBox.Show("===N1 : "+number1 + " ===N2: " + number2 +"==== :R: "+result + "=== P: "+PDS);
+            MessageBox.Show("===N1 : "+number1 + " ===N2: " + number2 +"==== :R: "+result + "=== P: "+PDS);
             Display.Text = Convert.ToString(result);
+        }
+
+        private void from_key(object sender, KeyEventArgs e)
+        {
+       //     MessageBox.Show(e.KeyCode + "");
+            switch (e.KeyCode)
+            {
+                case Keys.NumPad0:
+                    Display.Text += "1";
+                    break;
+
+                case Keys.NumPad1:
+                    Display.Text += "1";
+                    break;
+                case Keys.NumPad2:
+                    Display.Text += "2";
+                    break;
+                case Keys.NumPad3:
+                    Display.Text += "3";
+                    break;
+                case Keys.NumPad4:
+                    Display.Text += "4";
+                    break;
+                case Keys.NumPad5:
+                    Display.Text += "5";
+                    break;
+                case Keys.NumPad6:
+                    Display.Text += "6";
+                    break;
+                case Keys.NumPad7:
+                    Display.Text += "7";
+                    break;
+                case Keys.NumPad8:
+                    Display.Text += "8";
+                    break;
+                case Keys.NumPad9:
+                    Display.Text += "9";
+                    break;
+                case Keys.Enter:
+                    Mosavi_Click(sender, e);
+                    break;
+               case Keys.Add:
+                    HPDS(Plus, e);
+                    PDS = "plus";
+                   break;
+            }
+
         }
     }
 }

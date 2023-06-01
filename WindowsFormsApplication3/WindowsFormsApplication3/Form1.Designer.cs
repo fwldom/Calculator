@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication3
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Required designer variable.
@@ -268,7 +268,7 @@
             this.Display.Size = new System.Drawing.Size(220, 63);
             this.Display.TabIndex = 17;
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -292,8 +292,9 @@
             this.Controls.Add(this.Number3);
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
-            this.Name = "Form1";
+            this.Name = "Calculator";
             this.Text = "Calculator";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.from_key);
             this.ResumeLayout(false);
 
         }
