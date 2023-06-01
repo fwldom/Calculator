@@ -94,7 +94,7 @@ namespace WindowsFormsApplication3
                     break;
 
             }
-            MessageBox.Show(number1 + ":::" + number2);
+            MessageBox.Show("===N1 : "+number1 + " ===N2:" + number2 +"==== :R: "+result + "=== P: "+PDS);
             Display.Text = Convert.ToString(result);
         }
     }
