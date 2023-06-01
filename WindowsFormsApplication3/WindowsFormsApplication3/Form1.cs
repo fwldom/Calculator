@@ -15,7 +15,7 @@ namespace WindowsFormsApplication3
         int number1 = 0;
         int number2 = 0;
         string PDS = "";
-        bool ISFN = false;
+        bool ISFN = true;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +28,6 @@ namespace WindowsFormsApplication3
             if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
-
             }
             else
             {
@@ -70,7 +69,7 @@ namespace WindowsFormsApplication3
         private void HPDS(object sender, EventArgs e)
         {
             Button Sopt = (Button)sender;
-            PDS = Sopt.Text;
+            PDS = Sopt.Tag + "";
             Display.Text = "";
             ISFN = false;
         }
@@ -80,21 +79,21 @@ namespace WindowsFormsApplication3
             int result = 0 ;
             switch (PDS)
             {
-                case "+":
-                    result = number1 + number1;
+                case "plus":
+                    result = number1 + number2;
                     break;           
-                case "-":
-                    result = number1 - number1;
+                case "manfi":
+                    result = number2 - number1;
                     break;
-                case "×":
-                    result = number1 * number1;
+                case "zarb":
+                    result = number2 * number1;
                     break;
-                case "÷":
-                    result = number1 / number2;
+                case "tagh":
+                    result = number2 / number1;
                     break;
 
             }
-            MessageBox.Show("===N1 : "+number1 + " ===N2:" + number2 +"==== :R: "+result + "=== P: "+PDS);
+      //      MessageBox.Show("===N1 : "+number1 + " ===N2: " + number2 +"==== :R: "+result + "=== P: "+PDS);
             Display.Text = Convert.ToString(result);
         }
     }

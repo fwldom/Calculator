@@ -165,6 +165,7 @@
             this.Zarb.Name = "Zarb";
             this.Zarb.Size = new System.Drawing.Size(75, 66);
             this.Zarb.TabIndex = 9;
+            this.Zarb.Tag = "zarb";
             this.Zarb.Text = "×";
             this.Zarb.UseVisualStyleBackColor = false;
             this.Zarb.Click += new System.EventHandler(this.HPDS);
@@ -190,6 +191,7 @@
             this.Down.Name = "Down";
             this.Down.Size = new System.Drawing.Size(75, 66);
             this.Down.TabIndex = 11;
+            this.Down.Tag = "manfi";
             this.Down.Text = "-";
             this.Down.UseVisualStyleBackColor = false;
             this.Down.Click += new System.EventHandler(this.HPDS);
@@ -202,6 +204,7 @@
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(75, 66);
             this.Plus.TabIndex = 12;
+            this.Plus.Tag = "plus";
             this.Plus.Text = "+";
             this.Plus.UseVisualStyleBackColor = false;
             this.Plus.Click += new System.EventHandler(this.HPDS);
@@ -239,6 +242,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 66);
             this.button16.TabIndex = 15;
+            this.button16.Tag = "tagh";
             this.button16.Text = "÷";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.HPDS);
