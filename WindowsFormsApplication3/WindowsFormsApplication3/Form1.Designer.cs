@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button Number9;
+            this.Number9_1 = new System.Windows.Forms.Button();
             this.Number1 = new System.Windows.Forms.Button();
             this.Number2 = new System.Windows.Forms.Button();
             this.Number3 = new System.Windows.Forms.Button();
@@ -46,20 +46,19 @@
             this.button16 = new System.Windows.Forms.Button();
             this.Backspace = new System.Windows.Forms.Button();
             this.Display = new System.Windows.Forms.Label();
-            Number9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Number9
+            // Number9_1
             // 
-            Number9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            Number9.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
-            Number9.Location = new System.Drawing.Point(160, 247);
-            Number9.Name = "Number9";
-            Number9.Size = new System.Drawing.Size(75, 66);
-            Number9.TabIndex = 8;
-            Number9.Text = "9";
-            Number9.UseVisualStyleBackColor = false;
-            Number9.Click += new System.EventHandler(this.ClickNumber);
+            this.Number9_1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Number9_1.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
+            this.Number9_1.Location = new System.Drawing.Point(160, 247);
+            this.Number9_1.Name = "Number9_1";
+            this.Number9_1.Size = new System.Drawing.Size(75, 66);
+            this.Number9_1.TabIndex = 8;
+            this.Number9_1.Text = "9";
+            this.Number9_1.UseVisualStyleBackColor = false;
+            this.Number9_1.Click += new System.EventHandler(this.ClickNumber);
             // 
             // Number1
             // 
@@ -283,7 +282,7 @@
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Mosavi);
             this.Controls.Add(this.Zarb);
-            this.Controls.Add(Number9);
+            this.Controls.Add(this.Number9_1);
             this.Controls.Add(this.Number8);
             this.Controls.Add(this.Number7);
             this.Controls.Add(this.Number6);
@@ -318,6 +317,7 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button Backspace;
         private System.Windows.Forms.Label Display;
+        private System.Windows.Forms.Button Number9_1;
     }
 }
 
