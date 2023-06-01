@@ -25,7 +25,7 @@ namespace WindowsFormsApplication3
         {
             Button Number = (Button)sender;
             Display.Text += Number.Text;
-            if (ISFN)
+            if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
 
@@ -46,15 +46,14 @@ namespace WindowsFormsApplication3
         {
             try
             {
-                ISFN = true;
+                ISFN = false;
                 string coutext = Display.Text;
                 coutext = coutext.Remove(coutext.Length - 1);
                 Display.Text = coutext;
             }
             catch (Exception)
             {
-
-                throw;
+                MessageBox.Show("Error");
             }
 
         }
@@ -63,6 +62,9 @@ namespace WindowsFormsApplication3
         {
             Display.Text = "";
             ISFN = true;
+            number1 = 0;
+            number2 = 0;
+            PDS = "";
         }
 
         private void HPDS(object sender, EventArgs e)
@@ -70,6 +72,7 @@ namespace WindowsFormsApplication3
             Button Sopt = (Button)sender;
             PDS = Sopt.Text;
             Display.Text = "";
+            ISFN = false;
         }
 
         private void Mosavi_Click(object sender, EventArgs e)
@@ -91,6 +94,7 @@ namespace WindowsFormsApplication3
                     break;
 
             }
+            MessageBox.Show(number1 + ":::" + number2);
             Display.Text = Convert.ToString(result);
         }
     }

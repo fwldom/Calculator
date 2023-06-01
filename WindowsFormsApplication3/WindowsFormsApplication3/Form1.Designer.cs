@@ -49,6 +49,18 @@
             Number9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // Number9
+            // 
+            Number9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            Number9.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
+            Number9.Location = new System.Drawing.Point(160, 247);
+            Number9.Name = "Number9";
+            Number9.Size = new System.Drawing.Size(75, 66);
+            Number9.TabIndex = 8;
+            Number9.Text = "9";
+            Number9.UseVisualStyleBackColor = false;
+            Number9.Click += new System.EventHandler(this.ClickNumber);
+            // 
             // Number1
             // 
             this.Number1.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -145,18 +157,6 @@
             this.Number8.UseVisualStyleBackColor = false;
             this.Number8.Click += new System.EventHandler(this.ClickNumber);
             // 
-            // Number9
-            // 
-            Number9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            Number9.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
-            Number9.Location = new System.Drawing.Point(160, 247);
-            Number9.Name = "Number9";
-            Number9.Size = new System.Drawing.Size(75, 66);
-            Number9.TabIndex = 8;
-            Number9.Text = "9";
-            Number9.UseVisualStyleBackColor = false;
-            Number9.Click += new System.EventHandler(this.ClickNumber);
-            // 
             // Zarb
             // 
             this.Zarb.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -229,6 +229,7 @@
             this.Number0.TabIndex = 14;
             this.Number0.Text = "0";
             this.Number0.UseVisualStyleBackColor = false;
+            this.Number0.Click += new System.EventHandler(this.ClickNumber);
             // 
             // button16
             // 
