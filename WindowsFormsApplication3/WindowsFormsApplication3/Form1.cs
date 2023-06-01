@@ -41,6 +41,8 @@ namespace WindowsFormsApplication3
             if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
+
+
             }
             else
             {
