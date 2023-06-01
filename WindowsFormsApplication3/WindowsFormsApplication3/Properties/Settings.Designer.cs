@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApplication2.Properties
+namespace WindowsFormsApplication3.Properties
 {
 
 
