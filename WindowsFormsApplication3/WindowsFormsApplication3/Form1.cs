@@ -108,7 +108,7 @@ namespace WindowsFormsApplication3
                     break;
 
             }
-            MessageBox.Show("===N1 : "+number1 + " ===N2: " + number2 +"==== :R: "+result + "=== P: "+PDS);
+      //      MessageBox.Show("===N1 : "+number1 + " ===N2: " + number2 +"==== :R: "+result + "=== P: "+PDS);
             Display.Text = Convert.ToString(result);
         }
 
@@ -127,6 +127,29 @@ namespace WindowsFormsApplication3
             {
                 Mosavi.PerformClick();
             }
+            else if (e.KeyCode == Keys.Return)
+            {
+
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                Plus.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Subtract)
+            {
+                Down.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Multiply)
+            {
+                Plus.PerformClick();
+            }
+            else if (e.KeyCode == Keys.Divide)
+            {
+                Plus.PerformClick();
+            }
+
+
+
 
         }
     }
