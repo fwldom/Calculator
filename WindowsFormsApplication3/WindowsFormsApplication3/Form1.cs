@@ -118,6 +118,7 @@ namespace WindowsFormsApplication3
             if (e.KeyCode == Keys.NumPad1)
             {
                 Number1.PerformClick();
+                Number1.PointToClient();
             }
             else if (e.KeyCode == Keys.NumPad2)
             {
