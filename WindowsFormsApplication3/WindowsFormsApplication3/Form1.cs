@@ -43,7 +43,7 @@ namespace WindowsFormsApplication3
                 number1 = Convert.ToInt32(Display.Text);
 
 
-            }SS
+            }
             else
             {
                 number2 = Convert.ToInt32(Display.Text);
