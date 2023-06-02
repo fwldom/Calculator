@@ -121,6 +121,10 @@ namespace WindowsFormsApplication3
                 Number1.PerformClick();
             
             }
+            else if (e.KeyCode == Keys.NumPad0)
+            {
+                Number0.PerformClick();
+            }
             else if (e.KeyCode == Keys.NumPad2)
             {
                 Number2.PerformClick();
@@ -161,6 +165,10 @@ namespace WindowsFormsApplication3
             {
                 Mosavi.PerformClick();
             }
+            else if (e.KeyCode == Keys.End)
+            {
+                Mosavi.PerformClick();
+            }
             else if (e.KeyCode == Keys.Add)
             {
                 Plus.PerformClick();
@@ -180,6 +188,7 @@ namespace WindowsFormsApplication3
             else if (e.KeyCode == Keys.F5)
             {
                 Clear.PerformClick();
+
             }
 
 
