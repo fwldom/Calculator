@@ -114,68 +114,18 @@ namespace WindowsFormsApplication3
 
         private void from_key(object sender, KeyEventArgs e)
         {
-       //     MessageBox.Show(e.KeyCode + "");
-            switch (e.KeyCode)
+            //     MessageBox.Show(e.KeyCode + "");
+            if (e.KeyCode == Keys.NumPad1)
             {
-                case Keys.NumPad0:
-                    Display.Text += "0";
-                    ClickNumber(Number0, e);
-                    Backspace_Click(sender, e);
-                    break;
-
-                case Keys.NumPad1:
-                    Display.Text += "1";
-                    ClickNumber(Number1, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad2:
-                    Display.Text += "2";
-                    ClickNumber(Number2, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad3:
-                    Display.Text += "3";
-                    ClickNumber(Number3, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad4:
-                    Display.Text += "4";
-                    ClickNumber(Number4, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad5:
-                    Display.Text += "5";
-                    ClickNumber(Number5, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad6:
-                    Display.Text += "6";
-                    ClickNumber(Number6, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad7:
-                    Display.Text += "7";
-                    ClickNumber(Number7, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad8:
-                    Display.Text += "8";
-                    ClickNumber(Number8, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.NumPad9:
-                    Display.Text += "9";
-                    ClickNumber(Number9_1, e);
-                    Backspace_Click(sender, e);
-                    break;
-                case Keys.Enter:
-                    Mosavi_Click(sender, e);
-                    Backspace_Click(sender, e);
-                    break;
-               case Keys.Add:
-                    HPDS(Plus, e);
-                    PDS = "plus";
-                   break;
+                Display.Text += "1";
+            }
+            if (e.KeyCode == Keys.NumPad2)
+            {
+                Display.Text = "2";
+            }
+            else if (e.KeyCode == Keys.Return)
+            {
+                Mosavi.PerformClick();
             }
 
         }
