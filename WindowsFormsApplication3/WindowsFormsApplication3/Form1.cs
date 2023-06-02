@@ -123,6 +123,34 @@ namespace WindowsFormsApplication3
             {
                 Number2.PerformClick();
             }
+            else if (e.KeyCode == Keys.NumPad3)
+            {
+                Number3.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad4)
+            {
+                Number4.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad5)
+            {
+                Number5.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad6)
+            {
+                Number6.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad7)
+            {
+                Number7.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad8)
+            {
+                Number8.PerformClick();
+            }
+            else if (e.KeyCode == Keys.NumPad2)
+            {
+                Number9_1.PerformClick();
+            }
             else if (e.KeyCode == Keys.Enter)
             {
                 Mosavi.PerformClick();
@@ -146,6 +174,10 @@ namespace WindowsFormsApplication3
             else if (e.KeyCode == Keys.Divide)
             {
                 Plus.PerformClick();
+            }
+            else if (e.KeyCode == Keys.F5)
+            {
+                Clear.PerformClick();
             }
 
 

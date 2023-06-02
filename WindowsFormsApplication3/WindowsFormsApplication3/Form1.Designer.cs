@@ -42,7 +42,7 @@
             this.Mosavi = new System.Windows.Forms.Button();
             this.Down = new System.Windows.Forms.Button();
             this.Plus = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.Number0 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.Backspace = new System.Windows.Forms.Button();
@@ -209,17 +209,17 @@
             this.Plus.UseVisualStyleBackColor = false;
             this.Plus.Click += new System.EventHandler(this.HPDS);
             // 
-            // button14
+            // Clear
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button14.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
-            this.button14.Location = new System.Drawing.Point(11, 313);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 66);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "C";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.Clear.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Clear.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
+            this.Clear.Location = new System.Drawing.Point(11, 313);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 66);
+            this.Clear.TabIndex = 13;
+            this.Clear.Text = "C";
+            this.Clear.UseVisualStyleBackColor = false;
+            this.Clear.Click += new System.EventHandler(this.button14_Click);
             // 
             // Number0
             // 
@@ -278,7 +278,7 @@
             this.Controls.Add(this.Backspace);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.Number0);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.Plus);
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Mosavi);
@@ -314,7 +314,7 @@
         private System.Windows.Forms.Button Mosavi;
         private System.Windows.Forms.Button Down;
         private System.Windows.Forms.Button Plus;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button Number0;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button Backspace;
