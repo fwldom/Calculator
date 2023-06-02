@@ -16,7 +16,7 @@ namespace WindowsFormsApplication3
         int number2 = 0;
         string PDS = "";
         bool ISFN = true;
-        public Calculator()
+       public Calculator()
         {
             InitializeComponent();
             this.KeyPreview = true;
@@ -41,6 +41,7 @@ namespace WindowsFormsApplication3
             if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
+                
 
 
             }
@@ -170,11 +171,11 @@ namespace WindowsFormsApplication3
             }
             else if (e.KeyCode == Keys.Multiply)
             {
-                Plus.PerformClick();
+                Zarb.PerformClick();
             }
             else if (e.KeyCode == Keys.Divide)
             {
-                Plus.PerformClick();
+                button16.PerformClick();
             }
             else if (e.KeyCode == Keys.F5)
             {
