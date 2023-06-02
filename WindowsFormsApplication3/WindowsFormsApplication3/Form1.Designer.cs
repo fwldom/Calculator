@@ -251,7 +251,7 @@
             // 
             this.Backspace.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Backspace.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold);
-            this.Backspace.Location = new System.Drawing.Point(238, 51);
+            this.Backspace.Location = new System.Drawing.Point(239, 51);
             this.Backspace.Name = "Backspace";
             this.Backspace.Size = new System.Drawing.Size(75, 66);
             this.Backspace.TabIndex = 16;

@@ -159,7 +159,7 @@ namespace WindowsFormsApplication3
             }
             else if (e.KeyCode == Keys.Return)
             {
-
+                Mosavi.PerformClick();
             }
             else if (e.KeyCode == Keys.Add)
             {
