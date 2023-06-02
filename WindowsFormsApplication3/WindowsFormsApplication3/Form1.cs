@@ -117,13 +117,13 @@ namespace WindowsFormsApplication3
             //     MessageBox.Show(e.KeyCode + "");
             if (e.KeyCode == Keys.NumPad1)
             {
-                Display.Text += "1";
+                Number1.PerformClick();
             }
-            if (e.KeyCode == Keys.NumPad2)
+            else if (e.KeyCode == Keys.NumPad2)
             {
-                Display.Text = "2";
+                Number2.PerformClick();
             }
-            else if (e.KeyCode == Keys.Return)
+            else if (e.KeyCode == Keys.Enter)
             {
                 Mosavi.PerformClick();
             }

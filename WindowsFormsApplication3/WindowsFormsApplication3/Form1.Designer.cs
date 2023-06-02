@@ -181,7 +181,6 @@
             this.Mosavi.TabIndex = 10;
             this.Mosavi.Text = "=";
             this.Mosavi.UseVisualStyleBackColor = false;
-            this.Mosavi.Click += new System.EventHandler(this.Mosavi_Click);
             // 
             // Down
             // 
