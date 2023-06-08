@@ -16,8 +16,10 @@ namespace WindowsFormsApplication3
         int number2 = 0;
         string PDS = "";
         bool ISFN = true;
+
        public Calculator()
         {
+
             InitializeComponent();
             this.KeyPreview = true;
             foreach (Control Cont in this.Controls)
@@ -32,6 +34,10 @@ namespace WindowsFormsApplication3
 
 
             }
+            notifyIcon1.BalloonTipText = "Welcome To Calculator By Fwldom";
+            notifyIcon1.BalloonTipTitle = "Welcome . ";
+            notifyIcon1.Icon = SystemIcons.Application;
+            notifyIcon1.ShowBalloonTip(5);
         }
 
         private void ClickNumber(object sender, EventArgs e)
@@ -276,7 +282,11 @@ namespace WindowsFormsApplication3
             }
             else if (e.KeyCode == Keys.ShiftKey)
             {
-             //   Message.Create(12, 12, 1, 1);
+                notifyIcon1.BalloonTipText = "Calculator By Fwldom Hackers";
+                notifyIcon1.BalloonTipTitle = "Fwldom Message";
+                notifyIcon1.Icon = SystemIcons.Warning;
+                notifyIcon1.ShowBalloonTip(5);
+
             }
 
 

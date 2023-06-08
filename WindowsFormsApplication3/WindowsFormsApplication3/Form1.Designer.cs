@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.Number9_1 = new System.Windows.Forms.Button();
             this.Number1 = new System.Windows.Forms.Button();
@@ -48,6 +49,7 @@
             this.Backspace = new System.Windows.Forms.Button();
             this.Display = new System.Windows.Forms.Label();
             this.BANumber = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // Number9_1
@@ -281,6 +283,11 @@
             this.BANumber.Text = "0";
             this.BANumber.Click += new System.EventHandler(this.BANumber_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,6 +341,7 @@
         private System.Windows.Forms.Label Display;
         private System.Windows.Forms.Button Number9_1;
         private System.Windows.Forms.Label BANumber;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
