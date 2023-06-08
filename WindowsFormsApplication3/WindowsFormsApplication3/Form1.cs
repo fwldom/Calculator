@@ -265,7 +265,13 @@ namespace WindowsFormsApplication3
                 if (MessageBox.Show("Are you planning to exit the program?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     Application.Exit();
-
+                }
+            }
+            else if (e.KeyCode == Keys.Escape)
+            {
+                if (MessageBox.Show("Are you planning to exit the program?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Application.Exit();
                 }
             }
 
