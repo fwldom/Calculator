@@ -41,8 +41,6 @@ namespace WindowsFormsApplication3
             if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
-                
-
 
             }
             else
@@ -56,6 +54,7 @@ namespace WindowsFormsApplication3
                 MessageBox.Show("Very Number");
             }
         }
+
 
         private void Backspace_Click(object sender, EventArgs e)
         {
@@ -80,12 +79,41 @@ namespace WindowsFormsApplication3
             number1 = 0;
             number2 = 0;
             PDS = "";
+            BANumber.Text = "0";
+
         }
 
         private void HPDS(object sender, EventArgs e)
         {
             Button Sopt = (Button)sender;
             PDS = Sopt.Tag + "";
+            try
+            {
+                switch (PDS)
+                {
+
+                    case "plus":
+                        
+                            BANumber.Text = Convert.ToString(Convert.ToInt32(BANumber.Text) + Convert.ToInt32(Display.Text));
+                        break;
+                    case "manfi":
+                            BANumber.Text = Convert.ToString(Convert.ToInt32(BANumber.Text) - Convert.ToInt32(Display.Text));
+                        break;
+                    case "zarb":
+                        BANumber.Text = Convert.ToString(Convert.ToInt32(BANumber.Text) * Convert.ToInt32(Display.Text));
+                        break;
+                    case "tagh":
+                        BANumber.Text = Convert.ToString(Convert.ToInt32(BANumber.Text) / Convert.ToInt32(Display.Text));
+                        break;
+
+                }
+            }
+            catch (Exception)
+            {
+                BANumber.Text = Display.Text;
+            //   MessageBox.Show("Null");
+
+            }
             Display.Text = "";
             ISFN = false;
         }
@@ -96,16 +124,45 @@ namespace WindowsFormsApplication3
             switch (PDS)
             {
                 case "plus":
-                    result = number1 + number2;
+                    try
+                    {
+                        result = Convert.ToInt32(BANumber.Text) + Convert.ToInt32(Display.Text + "");
+                    }
+                    catch (Exception)
+                    {
+                        result = Convert.ToInt32(BANumber.Text);
+                    }
                     break;           
                 case "manfi":
-                    result = number2 - number1;
+                    try
+                    {
+                        result = Convert.ToInt32(BANumber.Text) - Convert.ToInt32(Display.Text);
+                    }
+                    catch (Exception)
+                    {
+                        result = Convert.ToInt32(BANumber.Text);
+                    }
                     break;
                 case "zarb":
-                    result = number2 * number1;
+                    try
+                    {
+                        result = Convert.ToInt32(BANumber.Text) * Convert.ToInt32(Display.Text);
+
+                    }
+                    catch (Exception)
+                    {
+                        result = Convert.ToInt32(BANumber.Text);
+                    }
                     break;
                 case "tagh":
-                    result = number2 / number1;
+                    try
+                    {
+                        result = Convert.ToInt32(BANumber.Text) / Convert.ToInt32(Display.Text);
+                    }
+                    catch (Exception)
+                    {
+                        result = Convert.ToInt32(BANumber.Text);
+                    }
                     break;
 
             }
@@ -190,9 +247,27 @@ namespace WindowsFormsApplication3
                 Clear.PerformClick();
 
             }
+            else if (e.KeyCode == Keys.C)
+            {
+                Clear.PerformClick();
+            }
+            else if (e.KeyCode == Keys.F1)
+            {
+MessageBox
+            }
 
 
 
+
+        }
+
+        private void Display_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BANumber_Click(object sender, EventArgs e)
+        {
 
         }
     }

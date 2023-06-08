@@ -47,6 +47,7 @@
             this.button16 = new System.Windows.Forms.Button();
             this.Backspace = new System.Windows.Forms.Button();
             this.Display = new System.Windows.Forms.Label();
+            this.BANumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Number9_1
@@ -263,10 +264,22 @@
             // 
             this.Display.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Display.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.Display.Location = new System.Drawing.Point(12, 51);
+            this.Display.Location = new System.Drawing.Point(16, 54);
             this.Display.Name = "Display";
             this.Display.Size = new System.Drawing.Size(220, 63);
             this.Display.TabIndex = 17;
+            this.Display.Click += new System.EventHandler(this.Display_Click);
+            // 
+            // BANumber
+            // 
+            this.BANumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BANumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.BANumber.Location = new System.Drawing.Point(15, 1);
+            this.BANumber.Name = "BANumber";
+            this.BANumber.Size = new System.Drawing.Size(220, 53);
+            this.BANumber.TabIndex = 18;
+            this.BANumber.Text = "0";
+            this.BANumber.Click += new System.EventHandler(this.BANumber_Click);
             // 
             // Calculator
             // 
@@ -274,6 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(322, 389);
+            this.Controls.Add(this.BANumber);
             this.Controls.Add(this.Display);
             this.Controls.Add(this.Backspace);
             this.Controls.Add(this.button16);
@@ -294,7 +308,6 @@
             this.Controls.Add(this.Number1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
-            this.Text = "Calculator";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.from_key);
             this.ResumeLayout(false);
 
@@ -320,6 +333,7 @@
         private System.Windows.Forms.Button Backspace;
         private System.Windows.Forms.Label Display;
         private System.Windows.Forms.Button Number9_1;
+        private System.Windows.Forms.Label BANumber;
     }
 }
 
