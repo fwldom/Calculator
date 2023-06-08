@@ -253,7 +253,17 @@ namespace WindowsFormsApplication3
             }
             else if (e.KeyCode == Keys.F1)
             {
-MessageBox
+                MessageBox.Show("HELP\n\n"+
+                                "Calculator By Fwldom \n"+
+                                "Programing Language C# .Net \n"+
+                                "For Woman Life Freedom \n"+
+                                "Iran Free \n "+
+                                "!!!!!!!!!");
+
+            }
+            else if (e.KeyCode == Keys.F)
+            {
+//                MessageBox.Show.WindowState = 
             }
 
 
