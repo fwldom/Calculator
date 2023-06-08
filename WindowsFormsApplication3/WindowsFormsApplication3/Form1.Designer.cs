@@ -313,8 +313,11 @@
             this.Controls.Add(this.Number3);
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Calculator";
+            this.TopMost = true;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.from_key);
             this.ResumeLayout(false);
 

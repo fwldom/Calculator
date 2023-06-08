@@ -44,6 +44,20 @@ namespace WindowsFormsApplication3
         {
             Button Number = (Button)sender;
             Display.Text += Number.Text;
+            if (true)
+            {
+                try
+                {
+                    Display.Text = Display.Text.Remove(9, 2);
+                    MessageBox.Show("Very Number");
+                }
+                catch (Exception)
+                {
+
+                    
+                }
+
+            }
             if (!ISFN)
             {
                 number1 = Convert.ToInt32(Display.Text);
@@ -51,14 +65,11 @@ namespace WindowsFormsApplication3
             }
             else
             {
+                
                 number2 = Convert.ToInt32(Display.Text);
 
             }
-            if (Display.Text.Length > 10)
-            {
-                Display.Text.Replace(Number.Text, "");
-                MessageBox.Show("Very Number");
-            }
+
         }
 
 
