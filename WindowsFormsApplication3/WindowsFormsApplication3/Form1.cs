@@ -176,7 +176,7 @@ namespace WindowsFormsApplication3
             if (e.KeyCode == Keys.NumPad1)
             {
                 Number1.PerformClick();
-            
+
             }
             else if (e.KeyCode == Keys.NumPad0)
             {
@@ -253,17 +253,27 @@ namespace WindowsFormsApplication3
             }
             else if (e.KeyCode == Keys.F1)
             {
-                MessageBox.Show("Calculator By Fwldom \n"+
-                                "Programing Language C# .Net \n"+
-                                "For Woman Life Freedom \n"+
-                                "Iran Free \n "+
-                                "!!!!!!!!!","HELP");
+                MessageBox.Show("Calculator By Fwldom \n" +
+                                "Programing Language C# .Net \n" +
+                                "For Woman Life Freedom \n" +
+                                "Iran Free \n " +
+                                "!!!!!!!!!", "HELP");
 
             }
-            else if (e.KeyCode == Keys.F)
+            else if (e.KeyCode == Keys.Escape)
             {
-               MessageBox.Show.WindowState = 
+                if (MessageBox.Show("Are you planning to exit the program?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Application.Exit();
+
+                }
             }
+
+
+
+
+
+
 
 
 
