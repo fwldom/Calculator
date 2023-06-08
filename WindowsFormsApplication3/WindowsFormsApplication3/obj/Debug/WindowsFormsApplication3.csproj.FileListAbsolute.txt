@@ -7,12 +7,12 @@ c:\users\fwldom\documents\visual studio 2015\Projects\WindowsFormsApplication3\W
 c:\users\fwldom\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
 c:\users\fwldom\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
 c:\users\fwldom\documents\visual studio 2015\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
-C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe.config
-C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.exe
-C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.pdb
-C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.exe
-C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\WindowsFormsApplication3.pdb
 C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
 C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
 C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
 C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Calculator.resources
+C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Calculator.exe.config
+C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Calculator.exe
+C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Calculator.pdb
+C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Calculator.exe
+C:\Users\fwldom\Documents\GitHub\Calculator\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Calculator.pdb
