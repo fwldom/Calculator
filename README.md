@@ -15,8 +15,6 @@ Calculator.exe
 ```
 For ...
 ```
-For Woman Life Freedom
-For Iran
-Free Iran
+For Freedom
 ```
 
